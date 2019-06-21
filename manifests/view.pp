@@ -26,7 +26,7 @@ define bind::view(
 
   if $ensure == 'present' {
     concat {"${bind::params::views_directory}/${_name}.zones":
-      force => true,
+      #force => true,
       group => 'root',
       mode  => '0644',
       owner => 'root',
