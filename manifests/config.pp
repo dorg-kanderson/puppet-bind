@@ -5,11 +5,11 @@ class bind::config {
     owner => root,
     group => $bind::params::bind_group,
     mode  => '0644',
-    force => true,
+    #force => true,
   }
 
   concat {"${bind::params::config_base_dir}/acls.conf":
-    force => true,
+    #force => true,
     group => 'root',
     mode  => '0644',
     owner => 'root',
